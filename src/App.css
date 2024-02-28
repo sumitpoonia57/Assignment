@@ -1,38 +1,142 @@
-.App {
+/* App.css */
+.container {
+  background: rgb(250,249,184);
+  background: linear-gradient(0deg, rgba(250,249,184,1) 28%, rgba(250,248,188,0.7286096567533263) 42%, rgba(247,247,228,1) 58%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes full height of the viewport */
+}
+
+header {
+  background-color: transparent; /* Remove background color */
+  color: #ffffff; /* White text */
+  /* padding: 10px; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+  max-width: 40vh; /* Reduce logo size */
+  display: block;
+  margin: 0 auto; /* Center the logo */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  flex-grow: 1; /* Allow main content to take remaining space */
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.award-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 16px;
+  
+  /* margin-bottom: 20px; */
 }
 
-.App-link {
-  color: #61dafb;
+.award2 h1{
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.award1{
+  display: flex;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+.award2{
+  width: 54vw;
+}
+
+.trophy {
+  width: 60vh;
+  height: 98vh;
+  /* width: 50vw; */
+}
+.award {
+  /* max-width: 35vw; */
+  width: 100%;
+}
+
+.GOV{
+  text-align: justify;
+}
+
+.text-section {
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 1.1em;
+}
+
+.products-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+}
+.product-info {
+  flex-basis: 48%; /* Adjust as needed for equal spacing */
+  /* margin-bottom: 20px; */
+}
+
+
+.product-img {
+  flex-basis: 80%; /* Take full width */
+  text-align: center; /* Center the content */
+ /* margin-bottom: 20px; */
+}
+
+.product-img img {
+  max-width: 80%; /* Increase image length */
+  height: auto;
+}
+.product-text {
+ font-size: smaller;
+  text-align: center;
+  margin-bottom: 5px; /* Add margin to create space between text and red line */
+}
+/* App.css */
+
+.red-line {
+  background-color: #ff0000; /* Red line */
+  height: 3px; /* Red line height */
+  width: 100%; /* Full width */
+  /* margin: 0 auto 20px; Center the red line and add space below it */
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(242, 44, 44); /* Black footer */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+  /* vertical-align: sub; */
+}
+
+.footer a {
+  color: #ffffff; /* White text color for anchor tags */
+  text-decoration: none; /* Remove underlining */
+  vertical-align: sub;
+  /* margin: 0 10px; Adjust spacing between items */
+}
+
+.footer-text {
+  text-align: center; 
+  color: #000000; /* Black text color */
+}
+.red{
+  color: #ff0000;
+}
+
+.footer contact-info{
+  vertical-align: sub;
+}
+
+.website{
+  display: flex;
 }
